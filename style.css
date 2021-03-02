@@ -44,8 +44,19 @@ a > img:hover , a:hover{
     background: url("images/read_more_blue.png") no-repeat;
 } */
 
-.row2 h5 , .row2 a{
+.row2 a {
     color: black;
+}
+
+.row1 .dots, .row2 .yellow-dots {
+    text-align: end;
+}
+
+.row2 h5 {
+    color: black;
+    font-size: 14px;
+    padding: 5px 5px;
+    border-bottom: 1px solid rgb(214, 214, 214);
 }
 
 nav{
@@ -70,6 +81,8 @@ main > .row > .col1 > .row1{
     border-radius: 0 0 20px 0;
     width: 293px;
     height: 355px;
+    margin: 5px;
+    margin-bottom: 15px;
 }
 
 main > .row > .col2 > .row1 {
@@ -77,18 +90,23 @@ main > .row > .col2 > .row1 {
     border-radius: 0 0 20px 0;
     width: 293px;
     height: 355px;
+    margin: 5px;
+    margin-bottom: 15px;
 }
 main > .row > .col3 > .row1 {
     background-image: url("images/___צ___¿_-291_354410564000.jpg");
     border-radius: 0 0 20px 0;
     width: 293px;
     height: 355px;
+    margin: 5px;
+    margin-bottom: 15px;
 }
 
 
 main > .row > .col1 > .row2 ,main > .row > .col2 > .row2 ,main > .row > .col3 > .row2 {
     width: 292px;
     height: 216px;
+    margin: 5px;
     border: 1px solid rgb(229, 229, 229);
     border-radius: 0 20px 0 0;
     background-image: linear-gradient(0deg, rgb(236, 236, 236) ,white);
@@ -101,6 +119,30 @@ main > .row {
     margin-top: 30px;
 }
 
+main .row1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.credit-card , .yellow {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.branches > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.branches, .yellow, .credit-card {
+    margin: 0 25px;
+}
+
+
+
 main > .row > .col1 > .row1 > .trade, main > .row > .col2 > .row1 > .purification , main > .row > .col3 > .row1 > .services {
     background-color: rgba(143, 143, 143, 0.9);
     width: 248px;
@@ -110,6 +152,7 @@ main > .row > .col1 > .row1 > .trade, main > .row > .col2 > .row1 > .purificatio
     padding: 10px;
     font: 13px;
 }
+
 
 
 
