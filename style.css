@@ -25,40 +25,40 @@ footer{
     /* 292 216 */
 }
 
-main > .row > .col > .row > .trade {
+main > .row > .col1 > .row1{
     background-image: url("images/PazFuel.JPG");
     width: 293px;
     height: 355px;
 }
 
 
-main > .row > .col > .row > .purification {
+main > .row > .col2 > .row1 {
     background-image: url("images/Picture-046410251500.jpg");
     width: 293px;
     height: 355px;
 }
-main > .row > .col > .row > .services {
+main > .row > .col3 > .row1 {
     background-image: url("images/___צ___¿_-291_354410564000.jpg");
     width: 293px;
     height: 355px;
 }
 
 
-main > .row > .col > .row > .yellow {
+main > .row > .col1 > .row2 {
     width: 292px;
     height: 216px;
     border: 1px solid rgb(229, 229, 229);
     background-image: linear-gradient(0deg, rgb(236, 236, 236) ,white);
 }
 
-main > .row > .col > .row > .credit-card {
+main > .row > .col2 > .row2 {
     width: 292px;
     height: 216px;
     border: 1px solid rgb(229, 229, 229);
     background-image: linear-gradient(0deg, rgb(236, 236, 236) ,white);
 }
 
-main > .row > .col > .row > .branches {
+main > .row > .col3 > .row2 {
     width: 292px;
     height: 216px;
     border: 1px solid rgb(229, 229, 229);
