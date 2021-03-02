@@ -8,62 +8,10 @@ body{
     margin: 0;
 }
 
-a, p , h5{
-    font-size: 13px;
-    margin: 0;
-    padding: 1px 8px;
-    color: white;
-}
-
-.dots:hover > span, .dots:hover > a {
-    color: rgb(0, 94, 160);
-}
-
-.yellow-dots {
-    color: rgb(231, 172, 22);
-}
-
-span {
-    font-size: 20px;
-    font-weight: bold;
-}
-/* a > span {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-a > img{
-    padding-right: 3px;
-    background: url("images/read_more_yellow.png") no-repeat;
-}
-
-a:hover{
-    color: rgb(0, 94, 160);
-}
-a > img:hover , a:hover{
-    background: url("images/read_more_blue.png") no-repeat;
-} */
-
-.row2 a {
-    color: black;
-}
-
-.row1 .dots, .row2 .yellow-dots {
-    text-align: end;
-}
-
-.row2 h5 {
-    color: black;
-    font-size: 14px;
-    padding: 5px 5px;
-    border-bottom: 1px solid rgb(214, 214, 214);
-}
-
 nav{
     background-color: rgb(143, 143, 143);
     background-image: linear-gradient(0deg, rgb(190, 190, 190) ,rgb(143, 143, 143));
-    /* delete */
-    height: 50px;
+    
 }
 
 footer{
@@ -141,8 +89,6 @@ main .row1{
     margin: 0 25px;
 }
 
-
-
 main > .row > .col1 > .row1 > .trade, main > .row > .col2 > .row1 > .purification , main > .row > .col3 > .row1 > .services {
     background-color: rgba(143, 143, 143, 0.9);
     width: 248px;
@@ -153,7 +99,55 @@ main > .row > .col1 > .row1 > .trade, main > .row > .col2 > .row1 > .purificatio
     font: 13px;
 }
 
+a, p , h5{
+    font-size: 13px;
+    margin: 0;
+    padding: 1px 8px;
+    color: white;
+}
 
+.dots:hover > span, .dots:hover > a {
+    color: rgb(0, 94, 160);
+}
 
+.yellow-dots {
+    color: rgb(231, 172, 22);
+}
+
+span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.row2 a {
+    color: black;
+}
+
+.row1 .dots, .row2 .yellow-dots {
+    text-align: end;
+}
+
+.row2 h5 {
+    color: black;
+    font-size: 14px;
+    padding: 5px 5px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+button {
+    border: none;
+    padding: 0;
+    height: 18px;
+}
+
+nav > .row > .col a {
+    text-decoration: none;
+    color: white;
+}
+
+nav > .row > .col a:hover {
+    text-decoration: underline;
+    color: rgb(0, 94, 160);
+}
 
 
