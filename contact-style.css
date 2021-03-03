@@ -40,7 +40,7 @@ nav > .container {
     height: 105px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 nav > .container > .row{
@@ -109,7 +109,7 @@ main > .container > .row > .col2 > .row3 ,main > .container > .row > .col3 > .ro
 
 main > .container > .row > .col1 > .row1 {
     width: 122px;
-    height: 41px;
+    height: 37px;
     border: 1px solid rgb(229, 229, 229);
     background-image: linear-gradient(0deg, rgb(207, 207, 207) ,white);
     display: flex;
@@ -163,6 +163,7 @@ main .col2 > .row2 > .title{
 }
 
 .traingle{
+    font-size: 12px;
     color: rgb(3, 94, 161);
     padding-left: 5px;
 }
@@ -197,6 +198,7 @@ nav button {
 }
 
 nav > .container > .row:first-child > div{
+    margin-top: 15px;
     padding: 5px;
     display: flex;
     justify-content: flex-end;
@@ -242,6 +244,7 @@ nav > .container > .row > ul > li > a , .dropdown-menu > ul > li > a {
 
 nav > .container > .row > ul > li {
     position: relative;
+    padding-bottom: 10px;
 }
 
 .dropdown-menu {

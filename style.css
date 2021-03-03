@@ -13,12 +13,18 @@ nav{
     height: 105px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(180deg, rgb(143, 143, 143) 85%,rgb(190, 190, 190));
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer{
     background-color: rgb(143, 143, 143);
-        /* delete */
     height: 38px;
     width: 100%;
     margin-top: 20px;
@@ -29,7 +35,7 @@ footer{
     justify-content: flex-end;
 }
 
-main > .row > .col1 > .row1{
+main > .container > .row > .col1 > .row1{
     background-image: url("images/PazFuel.JPG");
     border-radius: 0 0 20px 0;
     width: 293px;
@@ -38,7 +44,7 @@ main > .row > .col1 > .row1{
     margin-bottom: 15px;
 }
 
-main > .row > .col2 > .row1 {
+main > .container > .row > .col2 > .row1 {
     background-image: url("images/Picture-046410251500.jpg");
     border-radius: 0 0 20px 0;
     width: 293px;
@@ -46,7 +52,7 @@ main > .row > .col2 > .row1 {
     margin: 5px;
     margin-bottom: 15px;
 }
-main > .row > .col3 > .row1 {
+main > .container > .row > .col3 > .row1 {
     background-image: url("images/___צ___¿_-291_354410564000.jpg");
     border-radius: 0 0 20px 0;
     width: 293px;
@@ -56,7 +62,7 @@ main > .row > .col3 > .row1 {
 }
 
 
-main > .row > .col1 > .row2 ,main > .row > .col2 > .row2 ,main > .row > .col3 > .row2 {
+main > .container > .row > .col1 > .row2 ,main > .container > .row > .col2 > .row2 ,main > .container > .row > .col3 > .row2 {
     width: 292px;
     height: 216px;
     margin: 5px;
@@ -65,11 +71,33 @@ main > .row > .col1 > .row2 ,main > .row > .col2 > .row2 ,main > .row > .col3 > 
     background-image: linear-gradient(0deg, rgb(236, 236, 236) ,white);
 }
 
-main > .row {
+nav > .container {
+    width: 900px;
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav > .container > .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+} 
+
+main .container {
+    width: 900px;
+    height: 458px;
+    padding: 30px 0;
+}
+
+main > .container > .row {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 30px 0;
+    height: 589px;
 }
 
 main .row1{
@@ -82,7 +110,7 @@ main .row1{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .branches > div {
@@ -94,7 +122,7 @@ main .row1{
     margin: 0 25px;
 }
 
-main > .row > .col1 > .row1 > .trade, main > .row > .col2 > .row1 > .purification , main > .row > .col3 > .row1 > .services {
+main > .container > .row > .col1 > .row1 > .trade, main > .container > .row > .col2 > .row1 > .purification , main > .container > .row > .col3 > .row1 > .services {
     background-color: rgba(143, 143, 143, 0.9);
     width: 248px;
     height: 97px;
@@ -117,6 +145,7 @@ main a, p , h5{
 
 .yellow-dots {
     color: rgb(231, 172, 22);
+    margin-bottom: 8px;
 }
 
 span {
@@ -132,6 +161,12 @@ span {
     text-align: end;
 }
 
+.row1 .purification{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .row2 h5 {
     color: black;
     font-size: 14px;
@@ -139,7 +174,7 @@ span {
     border-bottom: 1px solid rgb(214, 214, 214);
 }
 
-button {
+nav button {
     border: none;
     padding: 0;
     height: 18px;
@@ -149,34 +184,35 @@ footer > ul > li:last-child > a {
     color: red;
 }
 
-nav > .row:first-child {
-    display: flex;
-    justify-content: space-around ;
-}
-
-nav > .row:first-child > div{
-    padding-top: 25px;
+nav > .container > .row:first-child > div{
+    margin-top: 15px;
+    padding: 5px;
     display: flex;
     justify-content: flex-end;
 }
 
-nav > .row  a , footer > ul > li > a{
+/* nav > .row:first-child > div{
+    padding-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+} */
+
+nav > .container > .row  a , footer > ul > li > a{
     text-decoration: none;
     color: white;
 }
 
-nav > .row  a:hover , footer > ul > li > a:hover{
+nav > .container > .row  a:hover , footer > ul > li > a:hover{
     text-decoration: underline;
     color: rgb(0, 94, 160);
 }
 
-nav > .row > ul {
+nav > .container > .row > ul {
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
     justify-content: center;
-    background-image: linear-gradient(0deg, rgb(190, 190, 190) ,rgb(143, 143, 143));
 }
 
 .dropdown-menu > ul{
@@ -188,7 +224,7 @@ nav > .row > ul {
     margin: 0;
 }
 
-nav > .row > ul > li > a , .dropdown-menu > ul > li > a {
+nav > .container > .row > ul > li > a , .dropdown-menu > ul > li > a {
     display: block;
     flex-basis: auto;
     font-size: 15px;
@@ -199,8 +235,9 @@ nav > .row > ul > li > a , .dropdown-menu > ul > li > a {
     background-color: rgb(189, 189, 189);
 }
 
-nav > .row > ul > li {
+nav > .container > .row > ul > li {
     position: relative;
+    padding-bottom: 10px;
 }
 
 .dropdown-menu {
@@ -220,26 +257,26 @@ li:hover > .dropdown-menu {
     border-top: 1px solid white;
 }
 
-nav > .row > ul > #position{
+nav > .container > .row > ul > #position{
     position: relative;
 }
 
-nav > .row > ul > span >#paz-logo {
+nav > .container > .row > ul > span >#paz-logo {
     position: absolute;
     top: -40px;
     left: 100%;
 }
 
-nav > .row > ul > span {
+nav > .container > .row > ul > span {
     margin: 0 16px;
 }
 
-nav > .row > ul > #home, nav > .row > ul > #position {
+nav > .container > .row > ul > #home, nav > .container > .row > ul > #position {
     margin: 0;
 }
 
 .dropdown-menu > ul > li > a{
-    border-bottom: rgb(143, 143, 143);
+    /* border-bottom: rgb(143, 143, 143); */
     padding:5px 5px;
 }
 
@@ -250,20 +287,22 @@ nav > .row > ul > #home, nav > .row > ul > #position {
 input {
     border: none;
     border-radius: 0 5px 0 0;
+    margin-right: 15px;
     width: 126px;
-    height: 14px;
+    height: 17px;
 }
 
-nav > .row > div > button, nav > .row > div > button > img{
-    height: 16px;
-    width: 16px;
+nav > .container > .row > div > button, nav > .container > .row > div > button > img{
+    height: 19px;
+    width: 19px;
     padding: 0;
     margin: 0;
 }
 
-nav > .row > div > a {
+nav > .container > .row > div > a {
     font-size: 12px;
     padding-left: 5px;
+    padding-top: 3px;
 }
 
 footer > ul {
