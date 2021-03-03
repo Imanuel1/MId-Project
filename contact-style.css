@@ -13,7 +13,7 @@ nav{
     height: 105px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    background-image: linear-gradient(180deg, rgb(143, 143, 143) 85%,rgb(190, 190, 190));
 }
 
 footer{
@@ -29,47 +29,106 @@ footer{
     justify-content: flex-end;
 }
 
-main > .row {
+nav .container {
+    width: 900px;
+    height: 105px;
+}
+main .container {
+    width: 900px;
+    height: 458px;
+    padding: 30px 0;
+}
+
+main > .container > .row {
+    /* width: 900px;
+    height: 458px; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 30px 0;
+    color: black;
 }
 
-button {
+main > .container > .row > .col1{
+    width: 122px;
+}
+
+main > .container > .row > .col2{
+    width: 440px;
+    margin: 10px;
+}
+
+main > .container > .row > .col3{
+    width: 292px;
+}
+
+main > .container > .row > .col2 > .row3 ,main > .container > .row > .col3 > .row1 ,main > .container > .row > .col3 > .row2 {
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 0 20px 0 0;
+    background-image: linear-gradient(0deg, rgb(236, 236, 236) ,white);
+}
+
+main > .container > .row > .col1 > div {
+    border: 1px solid rgb(229, 229, 229);
+    background-image: linear-gradient(0deg, rgb(236, 236, 236) ,white);
+}
+
+main label , main textarea, main p{
+    color: #6d6d6d;
+    font-size: 12px;
+}
+
+main a{
+
+}
+
+main button {
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 0 5px 0 0;
+    background-image: linear-gradient(0deg, rgb(2, 81, 137) ,rgb(12,163,228));
+    color: white;
+}
+
+main button:hover {
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 0 5px 0 0;
+    background-image: linear-gradient(0deg, rgb(244, 145, 9) ,rgb(252, 230, 31));
+    color: black;
+}
+
+nav button {
     border: none;
     padding: 0;
     height: 18px;
 }
 
-nav > .row:first-child {
+nav > .container > .row:first-child {
     display: flex;
     justify-content: space-around ;
 }
 
-nav > .row:first-child > div{
+nav > .container > .row:first-child > div{
     padding-top: 25px;
     display: flex;
     justify-content: flex-end;
 }
 
-nav > .row  a , footer > ul > li > a{
+nav > .container > .row  a , footer > ul > li > a{
     text-decoration: none;
     color: white;
 }
 
-nav > .row  a:hover , footer > ul > li > a:hover{
+nav > .container > .row  a:hover , footer > ul > li > a:hover{
     text-decoration: underline;
     color: rgb(0, 94, 160);
 }
 
-nav > .row > ul {
+nav > .container > .row > ul {
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
     justify-content: center;
-    background-image: linear-gradient(0deg, rgb(190, 190, 190) ,rgb(143, 143, 143));
 }
 
 .dropdown-menu > ul{
@@ -81,7 +140,7 @@ nav > .row > ul {
     margin: 0;
 }
 
-nav > .row > ul > li > a , .dropdown-menu > ul > li > a {
+nav > .container > .row > ul > li > a , .dropdown-menu > ul > li > a {
     display: block;
     flex-basis: auto;
     font-size: 15px;
@@ -92,7 +151,7 @@ nav > .row > ul > li > a , .dropdown-menu > ul > li > a {
     background-color: rgb(189, 189, 189);
 }
 
-nav > .row > ul > li {
+nav > .container > .row > ul > li {
     position: relative;
 }
 
@@ -113,21 +172,21 @@ li:hover > .dropdown-menu {
     border-top: 1px solid white;
 }
 
-nav > .row > ul > #position{
+nav > .container > .row > ul > #position{
     position: relative;
 }
 
-nav > .row > ul > span >#paz-logo {
+nav > .container > .row > ul > span >#paz-logo {
     position: absolute;
-    top: -30px;
+    top: -40px;
     left: 100%;
 }
 
-nav > .row > ul > span {
+nav > .container > .row > ul > span {
     margin: 0 16px;
 }
 
-nav > .row > ul > #home, nav > .row > ul > #position {
+nav > .container > .row > ul > #home, nav > .container > .row > ul > #position {
     margin: 0;
 }
 
@@ -140,21 +199,21 @@ nav > .row > ul > #home, nav > .row > ul > #position {
     background-image: linear-gradient(180deg, rgb(190, 190, 190) ,rgb(143, 143, 143));
 }
 
-input {
+nav input {
     border: none;
     border-radius: 0 5px 0 0;
     width: 126px;
     height: 14px;
 }
 
-nav > .row > div > button, nav > .row > div > button > img{
+nav > .container > .row > div > button, nav > .row > .container > div > button > img{
     height: 16px;
     width: 16px;
     padding: 0;
     margin: 0;
 }
 
-nav > .row > div > a {
+nav > .container > .row > div > a {
     font-size: 12px;
     padding-left: 5px;
 }
