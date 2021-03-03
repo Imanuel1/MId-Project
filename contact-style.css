@@ -13,12 +13,18 @@ nav{
     height: 105px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-image: linear-gradient(180deg, rgb(143, 143, 143) 85%,rgb(190, 190, 190));
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer{
     background-color: rgb(143, 143, 143);
-        /* delete */
     height: 38px;
     width: 100%;
     margin-top: 20px;
@@ -29,10 +35,21 @@ footer{
     justify-content: flex-end;
 }
 
-nav .container {
+nav > .container {
     width: 900px;
     height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+
+nav > .container > .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+} 
+
 main .container {
     width: 900px;
     height: 458px;
@@ -40,13 +57,10 @@ main .container {
 }
 
 main > .container > .row {
-    /* width: 900px;
-    height: 458px; */
+    height: 458px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 30px 0;
-    color: black;
+    color: #6d6d6d;
 }
 
 main > .container > .row > .col1{
@@ -55,38 +69,118 @@ main > .container > .row > .col1{
 
 main > .container > .row > .col2{
     width: 440px;
-    margin: 10px;
+    margin: 0 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main > .container > .row > .col2 > .row3{
+    width: 347px;
+    min-height: 332px;
+}
+
+main > .container > .row > .col2 > .row3 > div > div{
+    width: 245px;
+    margin: 10px auto 0;
 }
 
 main > .container > .row > .col3{
-    width: 292px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+main > .container > .row > .col3 > div{
+    width: 248px;
+    height: 142px;
+}
+
+main > .container > .row > .col3 > .row2{
+    margin-top: 20px;
 }
 
 main > .container > .row > .col2 > .row3 ,main > .container > .row > .col3 > .row1 ,main > .container > .row > .col3 > .row2 {
     border: 1px solid rgb(229, 229, 229);
     border-radius: 0 20px 0 0;
     background-image: linear-gradient(0deg, rgb(236, 236, 236) ,white);
+    padding: 12px 18px;
 }
 
-main > .container > .row > .col1 > div {
+main > .container > .row > .col1 > .row1 {
+    width: 122px;
+    height: 41px;
     border: 1px solid rgb(229, 229, 229);
-    background-image: linear-gradient(0deg, rgb(236, 236, 236) ,white);
+    background-image: linear-gradient(0deg, rgb(207, 207, 207) ,white);
+    display: flex;
+    align-items: center;
 }
 
-main label , main textarea, main p{
+main label , main .col2 p, main .col2 a, main .col2 span{
     color: #6d6d6d;
     font-size: 12px;
+    text-decoration: none;
+    margin: 5px 0;
 }
 
-main a{
+main .col2 > .row3 > div > div{
+    width: 160px;
+}
+main .col2 > .row3 > div > div > div{
+    margin-top: 3px;
+    display: flex;
+    justify-content: space-between;
+}
 
+main .col1 a{
+    color: #6d6d6d;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+main .col3 a, main p > strong , main .col3 p{
+    font-size: 13px;
+    margin: 0;
+    text-decoration: none;
+}
+
+main h3{
+    color: rgb(2, 81, 137);
+    font-size: 15px;
+    margin: 0;
+}
+
+main .col3 .title{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid rgb(229, 229, 229);
+}
+
+main .col2 > .row2 > .title{
+    color: #6d6d6d;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.traingle{
+    color: rgb(3, 94, 161);
+    padding-left: 5px;
+}
+
+
+main a:hover{
+    color: rgb(3, 94, 161);
+    text-decoration: underline;
 }
 
 main button {
+    width: 44px;
+    height: 21px;
     border: 1px solid rgb(229, 229, 229);
     border-radius: 0 5px 0 0;
     background-image: linear-gradient(0deg, rgb(2, 81, 137) ,rgb(12,163,228));
     color: white;
+    margin-right: auto;
 }
 
 main button:hover {
@@ -102,13 +196,8 @@ nav button {
     height: 18px;
 }
 
-nav > .container > .row:first-child {
-    display: flex;
-    justify-content: space-around ;
-}
-
 nav > .container > .row:first-child > div{
-    padding-top: 25px;
+    padding: 5px;
     display: flex;
     justify-content: flex-end;
 }
@@ -202,8 +291,9 @@ nav > .container > .row > ul > #home, nav > .container > .row > ul > #position {
 nav input {
     border: none;
     border-radius: 0 5px 0 0;
+    margin-right: 15px;
     width: 126px;
-    height: 14px;
+    height: 17px;
 }
 
 nav > .container > .row > div > button, nav > .row > .container > div > button > img{
@@ -216,6 +306,7 @@ nav > .container > .row > div > button, nav > .row > .container > div > button >
 nav > .container > .row > div > a {
     font-size: 12px;
     padding-left: 5px;
+    padding-top: 3px;
 }
 
 footer > ul {
