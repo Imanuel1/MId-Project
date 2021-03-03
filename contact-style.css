@@ -29,42 +29,6 @@ footer{
     justify-content: flex-end;
 }
 
-main > .row > .col1 > .row1{
-    background-image: url("images/PazFuel.JPG");
-    border-radius: 0 0 20px 0;
-    width: 293px;
-    height: 355px;
-    margin: 5px;
-    margin-bottom: 15px;
-}
-
-main > .row > .col2 > .row1 {
-    background-image: url("images/Picture-046410251500.jpg");
-    border-radius: 0 0 20px 0;
-    width: 293px;
-    height: 355px;
-    margin: 5px;
-    margin-bottom: 15px;
-}
-main > .row > .col3 > .row1 {
-    background-image: url("images/___צ___¿_-291_354410564000.jpg");
-    border-radius: 0 0 20px 0;
-    width: 293px;
-    height: 355px;
-    margin: 5px;
-    margin-bottom: 15px;
-}
-
-
-main > .row > .col1 > .row2 ,main > .row > .col2 > .row2 ,main > .row > .col3 > .row2 {
-    width: 292px;
-    height: 216px;
-    margin: 5px;
-    border: 1px solid rgb(229, 229, 229);
-    border-radius: 0 20px 0 0;
-    background-image: linear-gradient(0deg, rgb(236, 236, 236) ,white);
-}
-
 main > .row {
     display: flex;
     flex-direction: row;
@@ -72,81 +36,10 @@ main > .row {
     margin: 30px 0;
 }
 
-main .row1{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.credit-card , .yellow {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.branches > div {
-    display: flex;
-    justify-content: space-between;
-}
-
-.branches, .yellow, .credit-card {
-    margin: 0 25px;
-}
-
-main > .row > .col1 > .row1 > .trade, main > .row > .col2 > .row1 > .purification , main > .row > .col3 > .row1 > .services {
-    background-color: rgba(143, 143, 143, 0.9);
-    width: 248px;
-    height: 97px;
-    border-radius: 0 0 20px 0;
-    margin: 8px;
-    padding: 10px;
-    font: 13px;
-}
-
-main a, p , h5{
-    font-size: 13px;
-    margin: 0;
-    padding: 1px 8px;
-    color: white;
-}
-
-.dots:hover > span, .dots:hover > a {
-    color: rgb(0, 94, 160);
-}
-
-.yellow-dots {
-    color: rgb(231, 172, 22);
-}
-
-span {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.row2 a {
-    color: black;
-}
-
-.row1 .dots, .row2 .yellow-dots {
-    text-align: end;
-}
-
-.row2 h5 {
-    color: black;
-    font-size: 14px;
-    padding: 5px 5px;
-    border-bottom: 1px solid rgb(214, 214, 214);
-}
-
 button {
     border: none;
     padding: 0;
     height: 18px;
-}
-
-footer > ul > li:last-child > a {
-    color: red;
 }
 
 nav > .row:first-child {
@@ -239,7 +132,7 @@ nav > .row > ul > #home, nav > .row > ul > #position {
 }
 
 .dropdown-menu > ul > li > a{
-    border-bottom: rgb(143, 143, 143);
+    /* border-bottom: rgb(143, 143, 143); */
     padding:5px 5px;
 }
 
