@@ -254,7 +254,7 @@ li:hover > .dropdown-menu {
 }
 
 .dropdown-menu > ul > li{
-    border-top: 1px solid white;
+    border-top: 1px solid rgb(190, 190, 190);
 }
 
 nav > .container > .row > ul > #position{
